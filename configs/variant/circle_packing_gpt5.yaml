@@ -1,0 +1,18 @@
+defaults:
+  - override /database@_global_: island_large
+  - override /evolution@_global_: medium_budget
+  - override /task@_global_: circle_packing
+  - override /cluster@_global_: local
+  - _self_
+
+variant_suffix: "_gpt5"
+
+evo_config:
+  llm_models:
+    - "gpt-5"
+  meta_llm_models:
+    - "gpt-5"
+  num_generations: 100
+
+distributed_job_config:
+  time: "00:06:00"
