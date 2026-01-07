@@ -14,5 +14,5 @@ evo_config:
     - "gpt-5"
   num_generations: 100
 
-distributed_job_config:
+job_config:
   time: "00:06:00"
